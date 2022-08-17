@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@400;600;700;800&display=swap');
+
+$primaryColor: #FCFCFC;
+$primaryColorHover: #bfbfbf;
+$secondaryColor: #5C32FE;
+$secondaryColorHover: #241266;
+$primaryFont: 'Lora';
+$secondaryFont: 'Nunito';
+
+
+body { 
+    background: url("../src/assets/GradientBG1.png");
+    background-size:  cover;
+}
+
+
+button
+{   
+    border-radius: 10px;
+    width: 280px;
+    height: 50px;
+    border: none;
+
+    text-align: center;
+   
+    font-family: $secondaryFont;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 108.86%;
+}
+.primaryButton{
+
+    background: $primaryColor;
+    color: $secondaryColor;
+
+    &:hover
+    {
+        background: $primaryColorHover;
+        color: $secondaryColorHover;
+    }
+   
+}
+.secondaryButton{
+
+    color: $primaryColor;
+    background: none;
+    border: 8px solid $primaryColor;
+
+    &:hover
+    {
+        border: 8px solid $primaryColorHover;
+        color: $primaryColorHover;
+    }
+}
+
+.homepageAlign{
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+
+.homepageTxt
+{
+    width: 1350px;
+    height: 200px;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.emphasis
+{
+    color: $primaryColor;
+    font-family: $primaryFont;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.regular
+{
+    color: $primaryColor;
+    font-family: $primaryFont;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+
+h1
+{
+    display: inline;
+}
+
+h3
+{
+    color: $primaryColor;
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.description
+{
+    margin-top: 5px;
+    width: 350px;
+    height: 50px
+}
+
+.presentation
+{
+    margin: 30px 0px 40px 0px;
+}
+
+.navButton
+{
+    border: none;
+    background: none;
+
+}
+.navBar
+{
+    width: 105vw;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
